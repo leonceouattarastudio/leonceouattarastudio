@@ -1,0 +1,57 @@
+{
+  "name": "leonce-ouattara-api",
+  "version": "1.0.0",
+  "description": "API Express avec structure MVC pour Leonce Ouattara Studio",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed:services": "node src/scripts/seedServices.js",
+    "reset:services": "node src/scripts/resetServices.js",
+    "generate:slots": "node src/scripts/generateTimeSlots.js generate",
+    "cleanup:slots": "node src/scripts/generateTimeSlots.js cleanup",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "mvc",
+    "jwt",
+    "nodejs"
+  ],
+  "author": "Leonce Ouattara",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "connect-mongo": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.1.5",
+    "express-session": "^1.18.2",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.16.4",
+    "morgan": "^1.10.0",
+    "winston": "^3.11.0",
+    "winston-daily-rotate-file": "^4.7.1",
+    "xss": "^1.0.14"
+  },
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
